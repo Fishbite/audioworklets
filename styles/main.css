@@ -10,11 +10,21 @@
 
 body {
   background-color: rgb(10, 8, 8);
+}
+
+main {
+  margin: 2rem;
   color: bisque;
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
 }
 
-body p {
-  margin-top: 0.5rem;
+main h1 {
+  text-decoration: underline bisque;
+}
+
+main,
+h3,
+p {
+  margin-top: 1rem;
 }
