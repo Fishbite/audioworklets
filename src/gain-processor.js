@@ -3,7 +3,7 @@ console.log("gain-processor.js connected");
 class GainProcessor extends AudioWorkletProcessor {
   // add custom params with a statiic getter
   static get parameterDescriptors() {
-    return [{ name: "gain", defaultValue: 1 }];
+    return [{ name: "gain", defaultValue: 2, minValue: 0, maxValue: 3 }];
   }
 
   constructor() {
