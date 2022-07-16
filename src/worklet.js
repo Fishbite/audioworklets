@@ -31,9 +31,9 @@ function runWorklet() {
       osc.start();
       function stop(e) {
         console.log(gainParam);
-        gainParam.setValueAtTime(2, Actx.currentTime);
-        gainParam.exponentialRampToValueAtTime(0.01, Actx.currentTime + 0.075);
-        gainParam.linearRampToValueAtTime(0, Actx.currentTime + 0.75);
+        gainParam.setValueAtTime(1, Actx.currentTime);
+        gainParam.exponentialRampToValueAtTime(0.0000001, Actx.currentTime + 5);
+        gainParam.linearRampToValueAtTime(0, Actx.currentTime + 6);
 
         osc.stop(Actx.currentTime + 3);
       }
